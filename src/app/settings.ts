@@ -7,7 +7,4 @@ export function initSettings() {
   Settings.llm = new Ollama({
     model: "llama3.2:latest",
   });
-  Settings.embedModel = new HuggingFaceEmbedding({
-  modelType: "BAAI/bge-small-en-v1.5",
-});
 }
