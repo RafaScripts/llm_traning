@@ -7,4 +7,8 @@ export function initSettings() {
   Settings.llm = new Ollama({
     model: "llama3.2:latest",
   });
+
+  Settings.embedModel = new OllamaEmbedding({
+    model: "nomic-embed-text"
+  });
 }
